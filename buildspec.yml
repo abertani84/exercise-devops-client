@@ -16,6 +16,7 @@ phases:
     commands:
       - npm test
   deploy:
+    commands:
       - npm run build
 artifacts:
   files:
