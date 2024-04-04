@@ -6,10 +6,10 @@ phases:
       nodejs: 20
   pre_build:
     commands:
+      - export NODE_OPTIONS=--openssl-legacy-provider
       - npm ci
   build:
     commands:
-      - export NODE_OPTIONS=--openssl-legacy-provider
       - npm run build
       - npm run format
       - npm start
