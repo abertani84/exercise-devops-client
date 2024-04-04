@@ -11,6 +11,9 @@ phases:
   build:
     commands:
       - npm run build
+  post_build:
+    commands:
+      - cp public/index.html /usr/share/nginx/html/index.html
 artifacts:
   files:
     - '**/*'
