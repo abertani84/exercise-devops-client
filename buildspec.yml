@@ -10,10 +10,13 @@ phases:
       - npm ci
   build:
     commands:
-      - npm run build
       - npm run format
       - npm start
+  test:
+    commands:
       - npm test
+  deploy:
+      - npm run build
 artifacts:
   files:
     - '**/*'
