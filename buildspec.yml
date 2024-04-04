@@ -13,7 +13,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - sudo yum update
+      - sudo yum update -y
       - sudo yum install -y nginx
       - sudo cp ./public/index.html /usr/share/nginx/html/index.html
       - sudo systemctl restart ngnix
