@@ -13,8 +13,8 @@ phases:
       - npm run build
   post_build:
     commands:
-      - sudo yum update -y
-      - sudo yum install -y nginx
+      - sudo apt update -y
+      - sudo apt install -y nginx
       - sudo cp ./public/index.html /usr/share/nginx/html/index.html
       - sudo service ngnix start
 artifacts:
