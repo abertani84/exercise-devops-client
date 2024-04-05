@@ -16,7 +16,6 @@ phases:
       - sudo apt update -y
       - sudo apt install -y nginx
       - sudo cp ./public/index.html /usr/share/nginx/html/index.html
-      - sudo service ngnix start
 artifacts:
   files:
     - '**/*'
